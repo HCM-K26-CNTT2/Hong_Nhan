@@ -1,0 +1,7 @@
+﻿Bài 9: Xử lý sự cố bảo mật file trên Server OrderTech bằng Terminal 
+B1: pwd
+B2: Get-ChildItem -File .\public -Recurse -Force
+B3:
+* New-Item  -ItemType Directory -Path .\secrets
+* mv  .\public\db_password.txt  secrets\ 
+B4: Remove-Item -Path .\public\hacker_log.bat -Force
